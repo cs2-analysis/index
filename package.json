@@ -1,0 +1,30 @@
+{
+  "name": "index",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "npm run generate-data",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-data": "node generator"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.15",
+    "axios": "^1.7.9",
+    "quasar": "^2.17.4",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@quasar/vite-plugin": "^1.8.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^9.16.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.13.0",
+    "sass-embedded": "^1.82.0",
+    "vite": "^6.0.1"
+  }
+}

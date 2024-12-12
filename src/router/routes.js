@@ -1,0 +1,22 @@
+const routes = [
+  {
+    path: '/',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      {
+        path: '',
+        component: () => import('pages/IndexPage.vue')
+      },
+      {
+        path: '/file/:platform/:path(.*)',
+        component: () => import('pages/FilePage.vue')
+      },
+    ],
+  },
+  // {
+  //   path: '/:catchAll(.*)*',
+  //   component: () => import('pages/ErrorNotFound.vue')
+  // }
+]
+
+export default routes
